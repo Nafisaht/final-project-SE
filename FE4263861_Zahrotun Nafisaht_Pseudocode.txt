@@ -1,0 +1,16 @@
+PROGRAM ShoppingCart
+
+START
+WRITE "Add new item" = TRUE
+WHILE "Add new item" == TRUE
+    READ "choosen item"
+    READ "item quantity"
+    STORE "total item quantity" CALCULATE "choosen item" added by "item quantity"
+    PRINT "total item quantity"
+    IF "add item" = SUCCESS
+        PRINT "Item berhasil ditambahkan"
+        SET "Add new item" = FALSE
+        GOTO continue to shopping cart page
+    ELSE 
+        PRINT "Item belum berhasil ditambahkan"
+END
